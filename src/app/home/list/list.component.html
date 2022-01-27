@@ -1,14 +1,15 @@
+<nav class="geral_menu">
 <h2>Exempo 1</h2>
 <mat-list role="list">
-  <mat-list-item role="listitem">Item 1</mat-list-item>
-  <mat-list-item role="listitem">Item 2</mat-list-item>
-  <mat-list-item role="listitem">Item 3</mat-list-item>
+  <mat-list-item class="intes_lista" role="listitem">Item 1</mat-list-item>
+  <mat-list-item class="intes_lista" role="listitem">Item 2</mat-list-item>
+  <mat-list-item class="intes_lista" role="listitem">Item 3</mat-list-item>
 </mat-list>
  <br>
 
 <h2>Exempo 2</h2>
-<mat-selection-list #shoes>
-  <mat-list-option *ngFor="let shoe of typesOfShoes">
+<mat-selection-list #shoes >
+  <mat-list-option class="intes_lista" *ngFor="let shoe of typesOfShoes">
     {{shoe}}
   </mat-list-option>
 </mat-selection-list>
@@ -20,7 +21,7 @@
 
 <h2>Exemplo 3</h2>
 <mat-selection-list #shoes [multiple]="false">
-  <mat-list-option *ngFor="let shoe of typesOfShoes" [value]="shoe">
+  <mat-list-option *ngFor="let shoe of typesOfShoes" [value]="shoe" class="intes_lista">
     {{shoe}}
   </mat-list-option>
 </mat-selection-list>
@@ -28,3 +29,4 @@
 <p>
   Option selected: {{shoes.selectedOptions.selected[0]?.value}}
 </p>
+</nav>

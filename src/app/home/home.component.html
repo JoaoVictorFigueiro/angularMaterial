@@ -7,53 +7,49 @@
 </p>
 
 <div>
-<p>
-  <mat-toolbar>
-    <p>
-      <mat-toolbar>
-          <button class="botao_menu" mat-button [matMenuTriggerFor]="menu">Exemplos</button>
-          <mat-menu #menu="matMenu">
-            <button mat-menu-item routerLink="./autocomplete">AutoComplete</button>
-            <button mat-menu-item>Badge</button>
-            <button mat-menu-item>Bottom Sheet</button>
-            <button mat-menu-item>Button</button>
-            <button mat-menu-item>Button toggle</button>
-            <button mat-menu-item>Card</button>
-            <button mat-menu-item>Checkbox</button>
-            <button mat-menu-item>Chips</button>
-            <button mat-menu-item>Core</button>
-            <button mat-menu-item>Datepicker</button>
-            <button mat-menu-item>Dialog</button>
-            <button mat-menu-item>Divider</button>
-            <button mat-menu-item>Expansion Panel</button>
-            <button mat-menu-item>Form field</button>
-            <button mat-menu-item>Grid list</button>
-            <button mat-menu-item>Icon</button>
-            <button mat-menu-item>Input</button>
-            <button mat-menu-item routerLink="./list">List</button>
-            <button mat-menu-item>Menu</button>
-            <button mat-menu-item>Paginator</button>
-            <button mat-menu-item>Progress bar</button>
-            <button mat-menu-item>Progress spinner</button>
-            <button mat-menu-item>Radio button</button>
-            <button mat-menu-item>Ripples</button>
-            <button mat-menu-item>Select</button>
-            <button mat-menu-item>Sidenav</button>
-            <button mat-menu-item>Slide toggle</button>
-            <button mat-menu-item>Slider</button>
-            <button mat-menu-item>Snackbar</button>
-            <button mat-menu-item>Sort header</button>
-            <button mat-menu-item>Stepper</button>
-            <button mat-menu-item>Table</button>
-            <button mat-menu-item>Tabs</button>
-            <button mat-menu-item>Toolbar</button>
-            <button mat-menu-item>Tooltip</button>
-            <button mat-menu-item>Tree</button>
-          </mat-menu>
-      </mat-toolbar>
-    </p>
-  </mat-toolbar>
-</p>
+  <p>
+    <button class="botao_menu" mat-button [matMenuTriggerFor]="menu">
+      Exemplos
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item routerLink="./autocomplete">AutoComplete</button>
+      <button mat-menu-item>Badge</button>
+      <button mat-menu-item>Bottom Sheet</button>
+      <button mat-menu-item>Button</button>
+      <button mat-menu-item>Button toggle</button>
+      <button mat-menu-item>Card</button>
+      <button mat-menu-item>Checkbox</button>
+      <button mat-menu-item>Chips</button>
+      <button mat-menu-item>Core</button>
+      <button mat-menu-item>Datepicker</button>
+      <button mat-menu-item>Dialog</button>
+      <button mat-menu-item>Divider</button>
+      <button mat-menu-item>Expansion Panel</button>
+      <button mat-menu-item>Form field</button>
+      <button mat-menu-item>Grid list</button>
+      <button mat-menu-item>Icon</button>
+      <button mat-menu-item>Input</button>
+      <button mat-menu-item routerLink="./list">List</button>
+      <button mat-menu-item>Menu</button>
+      <button mat-menu-item>Paginator</button>
+      <button mat-menu-item>Progress bar</button>
+      <button mat-menu-item>Progress spinner</button>
+      <button mat-menu-item>Radio button</button>
+      <button mat-menu-item>Ripples</button>
+      <button mat-menu-item>Select</button>
+      <button mat-menu-item>Sidenav</button>
+      <button mat-menu-item>Slide toggle</button>
+      <button mat-menu-item>Slider</button>
+      <button mat-menu-item>Snackbar</button>
+      <button mat-menu-item>Sort header</button>
+      <button mat-menu-item>Stepper</button>
+      <button mat-menu-item>Table</button>
+      <button mat-menu-item>Tabs</button>
+      <button mat-menu-item>Toolbar</button>
+      <button mat-menu-item>Tooltip</button>
+      <button mat-menu-item>Tree</button>
+    </mat-menu>
+  </p>
 </div>
 
 <router-outlet></router-outlet>
