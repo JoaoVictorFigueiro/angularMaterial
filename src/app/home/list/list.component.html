@@ -1,0 +1,30 @@
+<h2>Exempo 1</h2>
+<mat-list role="list">
+  <mat-list-item role="listitem">Item 1</mat-list-item>
+  <mat-list-item role="listitem">Item 2</mat-list-item>
+  <mat-list-item role="listitem">Item 3</mat-list-item>
+</mat-list>
+ <br>
+
+<h2>Exempo 2</h2>
+<mat-selection-list #shoes>
+  <mat-list-option *ngFor="let shoe of typesOfShoes">
+    {{shoe}}
+  </mat-list-option>
+</mat-selection-list>
+
+<p>
+  Opções selecionadas: {{shoes.selectedOptions.selected.length}}
+</p>
+<br>
+
+<h2>Exemplo 3</h2>
+<mat-selection-list #shoes [multiple]="false">
+  <mat-list-option *ngFor="let shoe of typesOfShoes" [value]="shoe">
+    {{shoe}}
+  </mat-list-option>
+</mat-selection-list>
+
+<p>
+  Option selected: {{shoes.selectedOptions.selected[0]?.value}}
+</p>

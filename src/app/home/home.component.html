@@ -10,11 +10,10 @@
 <p>
   <mat-toolbar>
     <p>
-      <mat-toolbar color="accent">
-        <mat-toolbar-row>
+      <mat-toolbar>
           <button class="botao_menu" mat-button [matMenuTriggerFor]="menu">Exemplos</button>
           <mat-menu #menu="matMenu">
-            <button mat-menu-item>AutoComplete</button>
+            <button mat-menu-item routerLink="./autocomplete">AutoComplete</button>
             <button mat-menu-item>Badge</button>
             <button mat-menu-item>Bottom Sheet</button>
             <button mat-menu-item>Button</button>
@@ -31,7 +30,7 @@
             <button mat-menu-item>Grid list</button>
             <button mat-menu-item>Icon</button>
             <button mat-menu-item>Input</button>
-            <button mat-menu-item>List</button>
+            <button mat-menu-item routerLink="./list">List</button>
             <button mat-menu-item>Menu</button>
             <button mat-menu-item>Paginator</button>
             <button mat-menu-item>Progress bar</button>
@@ -51,9 +50,10 @@
             <button mat-menu-item>Tooltip</button>
             <button mat-menu-item>Tree</button>
           </mat-menu>
-        </mat-toolbar-row>
       </mat-toolbar>
     </p>
   </mat-toolbar>
 </p>
 </div>
+
+<router-outlet></router-outlet>
