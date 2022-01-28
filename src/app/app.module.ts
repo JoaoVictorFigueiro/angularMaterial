@@ -6,14 +6,16 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatMenuModule} from '@angular/material/menu';
-import {MatIconModule} from '@angular/material/icon';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { AutocompleteComponent } from './home/autocomplete/autocomplete.component';
 import {MatListModule} from '@angular/material/list';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import { ListComponent } from './home/list/list.component';
-
-
+import { MenuComponent } from './home/menu/menu.component';
+import {MatButtonModule} from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
+import {MatDividerModule} from '@angular/material/divider';
+import { ButtonComponent } from './home/button/button.component';
 
 
 
@@ -23,16 +25,21 @@ import { ListComponent } from './home/list/list.component';
     HomeComponent,
     AutocompleteComponent,
     ListComponent,
+    MenuComponent,
+    ButtonComponent,
   ],
   imports: [
+    MatIconModule,
+    MatDividerModule,
     MatListModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatMenuModule,
-    MatIconModule,
+    MatButtonModule,
     MatToolbarModule,
-    MatAutocompleteModule,
+    MatAutocompleteModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

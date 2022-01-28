@@ -1,3 +1,5 @@
+import { ButtonComponent } from './home/button/button.component';
+import { MenuComponent } from './home/menu/menu.component';
 import { ListComponent } from './home/list/list.component';
 import { AutocompleteComponent } from './home/autocomplete/autocomplete.component';
 import { HomeComponent } from './home/home.component';
@@ -11,7 +13,9 @@ const routes: Routes = [
   children: [
 
   {path: 'autocomplete', component: AutocompleteComponent},
-  {path: 'list', component: ListComponent}
+  {path: 'list', component: ListComponent},
+  {path: 'menu', component: MenuComponent},
+  {path: 'button', component: ButtonComponent},
   ]
 },
 ];
