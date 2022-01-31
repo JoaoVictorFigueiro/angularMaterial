@@ -1,22 +1,22 @@
 import { Component, OnInit } from '@angular/core';
 
 export interface PeriodicElement {
-  name: string;
-  position: number;
-  weight: number;
-  symbol: string;
+  nome: string;
+  numero: number;
+  idade: number;
+  situacao: string;
 }
 const ELEMENT_DATA: PeriodicElement[] = [
-  {position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H'},
-  {position: 2, name: 'Helium', weight: 4.0026, symbol: 'He'},
-  {position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li'},
-  {position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be'},
-  {position: 5, name: 'Boron', weight: 10.811, symbol: 'B'},
-  {position: 6, name: 'Carbon', weight: 12.0107, symbol: 'C'},
-  {position: 7, name: 'Nitrogen', weight: 14.0067, symbol: 'N'},
-  {position: 8, name: 'Oxygen', weight: 15.9994, symbol: 'O'},
-  {position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F'},
-  {position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne'},
+  {numero: 1, nome: 'Allan', idade: 23, situacao: 'Ativo'},
+  {numero: 2, nome: 'Marcelo', idade: 41, situacao: 'Ativo '},
+  {numero: 3, nome: 'Bruna', idade: 68, situacao: 'Inativo'},
+  {numero: 4, nome: 'Mariana', idade: 29, situacao: 'Cancelado'},
+  {numero: 5, nome: 'Henrique', idade: 15, situacao: 'Ativo'},
+  {numero: 6, nome: 'Felipe', idade: 17, situacao: 'Suspenso'},
+  {numero: 7, nome: 'Suelen', idade: 17, situacao: 'Inativo'},
+  {numero: 8, nome: 'Alex', idade: 19, situacao: 'Ativo'},
+  {numero: 9, nome: 'Fernanda', idade: 18, situacao: 'Ativo'},
+  {numero: 10,nome: 'Carlos', idade: 27, situacao: 'Inativo'},
 ];
 
 @Component({
@@ -26,7 +26,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
 })
 
 export class TableComponent implements OnInit {
-  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
+  displayedColumns: string[] = ['numero', 'nome', 'idade', 'situacao'];
   dataSource = ELEMENT_DATA;
   constructor() { }
 
