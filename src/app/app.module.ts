@@ -16,6 +16,9 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import {MatDividerModule} from '@angular/material/divider';
 import { ButtonComponent } from './home/button/button.component';
+import { TableComponent } from './home/table/table.component';
+import {MatTableModule} from '@angular/material/table';
+
 
 
 
@@ -27,6 +30,7 @@ import { ButtonComponent } from './home/button/button.component';
     ListComponent,
     MenuComponent,
     ButtonComponent,
+    TableComponent,
   ],
   imports: [
     MatIconModule,
@@ -38,7 +42,8 @@ import { ButtonComponent } from './home/button/button.component';
     MatMenuModule,
     MatButtonModule,
     MatToolbarModule,
-    MatAutocompleteModule
+    MatAutocompleteModule,
+    MatTableModule,
 
   ],
   providers: [],
