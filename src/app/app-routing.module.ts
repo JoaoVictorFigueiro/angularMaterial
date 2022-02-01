@@ -1,3 +1,4 @@
+import { DividerComponent } from './home/divider/divider.component';
 import { TableComponent } from './home/table/table.component';
 import { ButtonComponent } from './home/button/button.component';
 import { MenuComponent } from './home/menu/menu.component';
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path: 'menu', component: MenuComponent},
   {path: 'button', component: ButtonComponent},
   {path: 'table', component: TableComponent},
+  {path: 'divider', component: DividerComponent},
   ]
 },
 ];

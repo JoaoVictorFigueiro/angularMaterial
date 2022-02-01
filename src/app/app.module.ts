@@ -18,6 +18,8 @@ import {MatDividerModule} from '@angular/material/divider';
 import { ButtonComponent } from './home/button/button.component';
 import { TableComponent } from './home/table/table.component';
 import {MatTableModule} from '@angular/material/table';
+import { DividerComponent } from './home/divider/divider.component';
+
 
 
 
@@ -31,6 +33,7 @@ import {MatTableModule} from '@angular/material/table';
     MenuComponent,
     ButtonComponent,
     TableComponent,
+    DividerComponent,
   ],
   imports: [
     MatIconModule,
